@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>混和排版</title>
+	<style>
+		body{
+			margin: 0px;
+			font-family: Arail;
+		}
+		#wrapper{
+			width: 1080px;
+			margin: 20px auto;
+		}
+		#wrapper #banner{
+			height: 550px;
+			background-image: url("images/big.gif");
+			background-position: center;
+			background-size: cover;
+		}
+		#wrapper #intro{
+			text-indent: 36px;
+			word-spacing: 5px;
+			letter-spacing: 1px;
+			line-height: 22px;
+			font-size: 20px;
+			margin: 50px 20px ;
+			padding: 0px 15px;
+			box-sizing: border-box; /*如果使用padding內距就要加這個*/
+		}
+		#wrapper #cf{
+			text-align: center;
+			/*padding: 0px 4%;*/
+			/*box-sizing: border-box;*/
+		}
+		#wrapper #cf div{
+			width: 30%; /*每個div各佔cf的30%*/
+			/*float: left;*/ /*如果使用浮動 就會離開cf的範圍*/
+			display: inline-block; /*cf一起 上面的text-align: center就有效*/
+			height: auto;
+			margin: 2px 5px;
+		}
+		#wrapper #cf div img{
+			width:100%; /*填滿一個div*/	
+		}
+		#wrapper #footer{
+			clear: left;
+			text-align: center;
+			background-color: #67706E;
+			height: 100px;
+		}
+		#wrapper #footer p{
+			color: white;
+			font-size: 30px;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<!--#wrapper>#banner+#intro+#cf>(div>img[src=images/1.jpg])*3^#footer-->
+	<div id="wrapper">
+		<div id="banner"></div>
+		<div id="intro">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae officiis dolores facere modi accusantium culpa aut, hic repellendus sequi iure numquam id accusamus expedita provident illum delectus non laboriosam commodi cupiditate quisquam similique. Fugit perferendis ab, qui voluptates inventore aperiam rerum hic sint, sed, expedita, quaerat. Corrupti temporibus quis aspernatur vero officiis magni sunt similique aut perferendis accusantium obcaecati tempore, tempora. Tempore dicta, necessitatibus minus odio nobis modi deserunt quis. Distinctio impedit eos obcaecati illum veritatis, minima corrupti quaerat, non natus sapiente, laboriosam numquam pariatur modi similique beatae praesentium dolorum neque nisi atque vitae. Adipisci rerum, repudiandae voluptas eius excepturi cupiditate officiis soluta tempora maiores aliquam esse consectetur laborum commodi facere, consequatur aspernatur eligendi asperiores reprehenderit inventore architecto expedita ab sunt, possimus maxime! Beatae, iure doloribus eum tempora ullam eius corrupti incidunt explicabo veniam, molestias obcaecati ad, necessitatibus inventore cupiditate consequatur dolore tenetur, repellat itaque repellendus. Dolores officia labore, quasi explicabo ab libero, ipsam saepe sequi. Labore reprehenderit laborum possimus recusandae facilis, unde minima quas quibusdam tempora saepe amet animi, dolorem harum officiis accusantium fugiat iste, blanditiis in asperiores eos quae consequatur optio fugit. Cumque recusandae omnis, neque ab earum minima eos inventore architecto tempora deserunt facilis id nihil eligendi, magni non sequi dolore dolores quasi voluptatibus distinctio ipsum aperiam dolor unde! Facilis ab libero, odio corporis velit a qui laboriosam doloribus repudiandae itaque accusamus similique provident at rem tenetur fugiat! Sed delectus quisquam consectetur maxime, dolores ratione ad. Explicabo atque, officiis quisquam corporis animi ipsa impedit suscipit aut sed tenetur illo veritatis, neque ut tempore itaque quidem consequuntur maiores ex obcaecati dolorum similique esse cum, optio debitis. Ea quia asperiores id atque quibusdam reiciendis optio. Necessitatibus officia cumque dolor sunt non earum qui laborum magnam, ex eos sit vitae hic fugit itaque dicta repellendus nesciunt modi neque voluptatem. Quam!
+		</div>
+		<div id="cf">
+			<div><img src="images/1.jpg" alt=""></div>
+			<div><img src="images/2.jpg" alt=""></div>
+			<div><img src="images/3.jpg" alt=""></div>
+		</div>
+		<div id="footer">
+			<p>BASIC WEB DESIGN</p>
+		</div>
+	</div>
+</body>
+</html>
